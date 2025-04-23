@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
+    <style>
+        .Contact_me {
+            margin-top: 80px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .contact_form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,8 +32,8 @@
             <div class="navbar__center">
                 <ul class="navbar__left">
                     <li><a href="#about_me">Sobre Mí</a></li>
-                    <li><a href="">Proyectos</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
             <div class="navbar__cv">
@@ -175,20 +190,20 @@
                     <div class="skill-item">
                         <div class="skill-info">
                             <span><i class="fab fa-html5"></i> HTML</span>
-                            <span class="skill-level">Intermedio</span>
+                            <span class="skill-level">Básico</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress intermediate"></div>
+                            <div class="progress basic"></div>
                         </div>
                     </div>
 
                     <div class="skill-item">
                         <div class="skill-info">
                             <span><i class="fab fa-css3-alt"></i> CSS</span>
-                            <span class="skill-level">Intermedio</span>
+                            <span class="skill-level">Básico</span>
                         </div>
                         <div class="progress-bar">
-                            <div class="progress intermediate"></div>
+                            <div class="progress basic"></div>
                         </div>
                     </div>
 
@@ -259,7 +274,7 @@
                             <img src="https://campus.ibero.edu.co/img/IBERO.fd2d65b2.png" alt="LogoIbero"
                                 class="education-logo">
                         </div>
-                        
+
 
                         <span class="education-date">2025 - Presente</span>
                         <h3 class="education-institution">Corporación Universitaria Iberoamericana</h3>
@@ -289,6 +304,18 @@
                         </p>
                     </div>
                 </div>
+            </section>
+            <section id="contact" class="Contact_me">
+                <h2><strong>Contact</strong></h2>
+                <div>
+                    <form action="" method="POST" class="contact_form">
+                        <input type="text" name="name" placeholder="Nombre" required />
+                        <input type="email" name="email" placeholder="Correo Electrónico" required />
+                        <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        <button type="submit" class="btn">Enviar</button>
+                    </form>
+                </div>
+
             </section>
         </article>
     </main>

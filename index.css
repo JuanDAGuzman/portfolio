@@ -372,12 +372,6 @@ h2 strong {
     text-decoration: underline;
 }
 
-.technologies strong {
-    color: black;
-    font-weight: 700;
-    font-size: 3rem;
-}
-
 .education {
     margin-top: 80px;
     font-size: 2rem;
